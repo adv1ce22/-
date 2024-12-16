@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дубай - Оплата тура</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #85d3ff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .header img {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            height: 50px;
+        }
+
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .login-button {
+            background-color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .content {
+            display: flex;
+            margin: 100px auto;
+            width: 1100px;
+            max-width: 2000px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .image-container img {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .details {
+            flex: 1;
+            padding-left: 40px;
+        }
+
+        .details h1 {
+            text-align: center;
+            font-size: 36px;
+            margin: 0 0 20px;
+            padding-bottom: 100px;
+        }
+
+        .date-time {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .date-time div {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .date-time span {
+            margin: 0 10px;
+        }
+
+        .date-time label {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .date-time input {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .price {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .price span {
+            color: red;
+            font-weight: bold;
+        }
+
+        .pay-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #85d3ff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .pay-button:hover {
+            background-color: #62b0e6;
+        }
+
+        .footer {
+            background-color: #85d3ff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            margin-top: auto;
+        }
+
+        .footer a {
+            color: #000;
+            text-decoration: none;
+        }
+        .image-container{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="main.html">
+            <img src="logo.png" alt="Логотип">
+        </a>
+        <div class="header-title">Aviosels</div>
+        <a href="Login.html" class="login-button">Войти</a>
+    </div>
+
+    <div class="content">
+        <div class="image-container">
+            <img src="Фотки стран/Switzeland.jpg " alt="Швейцария">
+        </div>
+        <div class="details">
+            <h1>Швейцария</h1>
+            <div class="date-time">
+                <div>
+                    <label for="date-from">От</label>
+                    <input type="date" id="date-from" name="date-from">
+                </div>
+                <span>и</span>
+                <div>
+                    <label for="date-to">До</label>
+                    <input type="date" id="date-to" name="date-to">
+                </div>
+            </div>
+            <div class="date-time">
+                <div>
+                    <label for="time-from">От</label>
+                    <input type="time" id="time-from" name="time-from">
+                </div>
+                <span>и</span>
+                <div>
+                    <label for="time-to">До</label>
+                    <input type="time" id="time-to" name="time-to">
+                </div>
+            </div>
+            <div class="price">
+                Стоимость тура: <span>14 618</span> р.
+            </div>
+            <button class="pay-button">Оплатить</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Gmail: <a href="mailto:ivanpetr760@gmail.com">ivanpetr760@gmail.com</a> | Контактный номер: 8-977-294-77-52
+    </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviosels</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #85d3ff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .imgheader {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            height: 50px;
+        }
+
+        .header-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .login-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-items: center;
+            margin: 20px auto;
+            max-width: 1100px;
+            flex: 1;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .card-button {
+            margin: 15px 20px;
+            padding: 8px 15px;
+            background-color: #85d3ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 200px;
+
+        }
+
+        .footer {
+            background-color: #85d3ff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #000;
+            text-decoration: none;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="main.html">
+        <img  src="logo.png" alt="Логотип" class="imgheader">
+        </a>
+        <div class="header-title">Aviosels</div>
+        <a href="Login.html" class="login-button">Войти</a>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="Фотки стран/Dubai.jpg" alt="Dubai">
+            <div class="card-content">
+                <div class="card-title">Дубай</div>
+                <div class="card-price">Стоимость: 6 089</div>
+            </div>
+            <a href="Дубай.html">
+            <button  class="card-button">Забронировать</button>
+            </a>
+        </div>
+        
+        <div class="card">
+            <img src="Фотки стран/Switzeland.jpg" alt="Switzerland">
+            <div class="card-content">
+                <div class="card-title">Швейцария</div>
+                <div class="card-price">Стоимость: 14 618</div>
+            </div>
+            <a href="Швейцария.html">
+            <button class="card-button">Забронировать</button>
+            </a>
+        </div>
+        
+        <div class="card">
+            <img src="Фотки стран/Brazilia.jpg" alt="Brazil">
+            <div class="card-content">
+                <div class="card-title">Бразилия</div>
+                <div class="card-price">Стоимость: 30 615</div>
+            </div>
+            <a href="Бразилия.html">
+                <button class="card-button">Забронировать</button>
+                </a>
+        </div>
+
+        <div class="card">
+            <img src="Фотки стран/Paris.jpg" alt="France">
+            <div class="card-content">
+                <div class="card-title">Франция</div>
+                <div class="card-price">Стоимость: 12 265</div>
+            </div>
+            <a href="Франция.html">
+                <button class="card-button">Забронировать</button>
+                </a>
+        </div>
+
+        <div class="card">
+            <img src="Фотки стран/Africa.jpg" alt="Africa">
+            <div class="card-content">
+                <div class="card-title">Африка</div>
+                <div class="card-price">Стоимость: 35 199</div>
+            </div>
+            <a href="Африка.html">
+                <button class="card-button">Забронировать</button>
+                </a>
+        </div>
+
+        <div class="card">
+            <img src="Фотки стран/Italian.jpg" alt="Italy">
+            <div class="card-content">
+                <div class="card-title">Италия</div>
+                <div class="card-price">Стоимость: 21 435</div>
+            </div>
+            <a href="Италия.html">
+                <button class="card-button">Забронировать</button>
+                </a>
+        </div>
+
+        <div class="card">
+            <img src="Фотки стран/Germany.jpg" alt="Germany">
+            <div class="card-content">
+                <div class="card-title">Германия</div>
+                <div class="card-price">Стоимость: 14 999</div>
+            </div>
+            <a href="Германия.html">
+                <button class="card-button">Забронировать</button>
+                </a>
+        </div>
+
+        <div class="card">
+            <img src="Фотки стран/NIderlands.jpg" alt="Netherlands">
+            <div class="card-content">
+                <div class="card-title">Нидерланды</div>
+                <div class="card-price">Стоимость: 26 505</div>
+            </div>
+            <a href="Нидерланды.html">
+                <button class="card-button">Забронировать</button>
+                </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Gmail: <a href="mailto:ivanpetr760@gmail.com">ivanpetr760@gmail.com</a> | Контактный номер: 8-977-294-77-52
+    </div>
+</body>
+</html>

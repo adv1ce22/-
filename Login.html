@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            background-color: #87CEFA;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        .imgheader {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            height: 50px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            line-height: 50px;
+            color: #000;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 120px);
+        }
+
+        .login-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .login-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .login-form p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .login-form p a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .login-form p a:hover {
+            text-decoration: underline;
+        }
+
+        .login-form button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-form button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .footer {
+            background-color: #87CEFA;
+            text-align: center;
+            padding: 10px;
+            color: #000;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="main.html">
+            <img  src="logo.png" alt="Логотип" class="imgheader">
+            </a>
+        <h1>Вход</h1>
+    </div>
+
+    <div class="login-container">
+        <div class="login-form">
+            <input type="text" placeholder="Логин">
+            <input type="password" placeholder="Пароль">
+            <p>Нет аккаунта? <a href="registration.html">Можно бесплатно зарегистрироваться</a></p>
+            <button>Войти</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Gmail: ivanpet760@gmail.com | Контактный номер: 8-977-292-77-52
+    </div>
+</body>
+</html>
